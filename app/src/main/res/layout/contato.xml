@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtAux1"
+        android:text="Nome :"
+        android:gravity="right"
+        android:width="70dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dip"
+        >
+    </TextView>
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_marginLeft="5dip"
+        android:text="Nome contato"
+        android:width="190dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/txtAux1">
+    </EditText>
+    <TextView
+        android:id="@+id/txtAux3"
+        android:text="Endereço :"
+        android:width="70dip"
+        android:gravity="right"
+        android:layout_marginTop="10dip"
+        android:layout_centerVertical="@+id/txtAux2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtNome"
+        android:layout_alignParentLeft="true">
+    </TextView>
+    <EditText
+        android:id="@+id/edtEndereco"
+        android:layout_marginLeft="5dip"
+        android:text="Endereco contato"
+        android:width="190dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtNome"
+        android:layout_toRightOf="@+id/txtAux3">
+    </EditText>
+    <TextView
+        android:id="@+id/txtAux5"
+        android:text="Telefone :"
+        android:width="70dip"
+        android:gravity="right"
+        android:layout_marginTop="10dip"
+        android:layout_centerVertical="@+id/txtAux2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtEndereco"
+        android:layout_alignParentLeft="true">
+    </TextView>
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_marginLeft="5dip"
+        android:text="Telefone contato"
+        android:width="190dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtEndereco"
+        android:layout_toRightOf="@+id/txtAux5">
+    </EditText>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTelefone"
+        android:gravity="center_vertical">
+        <Button
+            android:text="Confirmar"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnConfirmar"
+            android:layout_below="@+id/edtTelefone"
+            android:onClick="btnConfirmar_click"
+            android:layout_alignParentLeft="true">
+        </Button>
+
+        <Button
+            android:text="Cancelar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:id="@+id/btnCancelar"
+            android:layout_below="@+id/edtTelefone"
+            android:onClick="btnCancelar_click"
+            android:layout_alignParentRight="true">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>
